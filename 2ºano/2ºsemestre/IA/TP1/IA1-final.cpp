@@ -196,10 +196,7 @@ void dfs(Node* first, Node* final) {
         s.push(successor);
         }
 
-      } else if (actual != NULL) { //acontece apenas se o tabuleiro for repetido
-        free(actual);
-        actual = NULL;
-      }
+      } else free(actual);
   }
 
   printf("Solution not found.\n");
